@@ -161,7 +161,7 @@
             CoachTxtExp.Font = new Font("NAMU 1960", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
             CoachTxtExp.Location = new Point(14, 99);
             CoachTxtExp.Name = "CoachTxtExp";
-            CoachTxtExp.PlaceholderText = "Experience";
+            CoachTxtExp.PlaceholderText = "Experience in Years";
             CoachTxtExp.Size = new Size(159, 22);
             CoachTxtExp.TabIndex = 6;
             // 

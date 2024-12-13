@@ -75,9 +75,7 @@ namespace Gym
         public void clearFields()
         {
             BillingCmbMember.SelectedIndex = -1;
-            BillingTxtAmount.Text = "";
             BillingDatePeriod.Value = DateTime.Now;
-            BillingDate.Value = DateTime.Now;
         }
 
         public void LoadComboBoxData()
@@ -102,20 +100,29 @@ namespace Gym
                 getID = Convert.ToInt32(BillingGridList.Rows[e.RowIndex].Cells[0].Value);
                 var billing = _context.Payments.Find(getID);
                 BillingCmbMember.SelectedValue = billing.MemberId;
-                BillingTxtAmount.Text = billing.Amount.ToString();
                 BillingDatePeriod.Value = billing.DatePeriod;
-                BillingDate.Value = billing.Date;
             }
         }
 
         private void BillingBtnConfirm_Click(object sender, EventArgs e)
         {
+            int memberId = (int)BillingCmbMember.SelectedValue;
+            var member = _context.Clients.Include(c => c.Membership).FirstOrDefault(c => c.Id == memberId);
+
+            if (member == null || member.Membership == null)
+            {
+                MessageBox.Show("Member does not have a membership", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            decimal amount = member.Membership.Price;
+
             var newBilling = new Payment
             {
-                MemberId = (int)BillingCmbMember.SelectedValue,
-                Amount = Convert.ToDecimal(BillingTxtAmount.Text),
+                MemberId = memberId,
+                Amount = amount,
                 DatePeriod = BillingDatePeriod.Value,
-                Date = BillingDate.Value
+                Date = DateTime.Now
             };
 
             _context.Payments.Add(newBilling);
@@ -124,12 +131,21 @@ namespace Gym
             clearFields();
             displayData();
 
-            MessageBox.Show("Billing confirmed successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Billing added successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void BillingBtnCancel_Click(object sender, EventArgs e)
         {
-            clearFields();
+            var billingToDelete = _context.Payments.FirstOrDefault(b => b.Id == getID);
+
+            if (billingToDelete != null)
+            {
+                _context.Payments.Remove(billingToDelete);
+                _context.SaveChanges();
+
+                displayData();
+                MessageBox.Show("Billing deleted successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

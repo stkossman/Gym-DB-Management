@@ -110,7 +110,7 @@
             MembershipTxtDuration.Font = new Font("NAMU 1960", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
             MembershipTxtDuration.Location = new Point(179, 63);
             MembershipTxtDuration.Name = "MembershipTxtDuration";
-            MembershipTxtDuration.PlaceholderText = "Duration";
+            MembershipTxtDuration.PlaceholderText = "Duration in days";
             MembershipTxtDuration.Size = new Size(159, 22);
             MembershipTxtDuration.TabIndex = 13;
             // 
@@ -137,7 +137,7 @@
             MembershipTxtPrice.Font = new Font("NAMU 1960", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
             MembershipTxtPrice.Location = new Point(509, 63);
             MembershipTxtPrice.Name = "MembershipTxtPrice";
-            MembershipTxtPrice.PlaceholderText = "Price";
+            MembershipTxtPrice.PlaceholderText = "Price in USD";
             MembershipTxtPrice.Size = new Size(159, 22);
             MembershipTxtPrice.TabIndex = 13;
             // 

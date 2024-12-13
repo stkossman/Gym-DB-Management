@@ -53,6 +53,8 @@ namespace Gym
             manageReceptionists1.Visible = false;
             manageBilling1.Visible = false;
             homePage1.Visible = false;
+
+            dashboard1.LoadDashboardData();
         }
 
         private void btnCoach_Click(object sender, EventArgs e)
@@ -67,6 +69,8 @@ namespace Gym
             manageReceptionists1.Visible = false;
             manageBilling1.Visible = false;
             homePage1.Visible = false;
+
+            manageCoach1.displayData();
         }
 
         private void btnMembers_Click(object sender, EventArgs e)
@@ -81,6 +85,9 @@ namespace Gym
             manageReceptionists1.Visible = false;
             manageBilling1.Visible = false;
             homePage1.Visible = false;
+
+            manageMembers1.displayData();
+            manageMembers1.LoadComboBoxData();
         }
 
         private void btnReceptionists_Click(object sender, EventArgs e)
@@ -95,6 +102,8 @@ namespace Gym
             manageMemberships1.Visible = false;
             manageBilling1.Visible = false;
             homePage1.Visible = false;
+
+            manageReceptionists1.displayData();
         }
 
         private void btnBilling_Click(object sender, EventArgs e)
@@ -109,6 +118,9 @@ namespace Gym
             manageMembers1.Visible = false;
             manageMemberships1.Visible = false;
             homePage1.Visible = false;
+
+            manageBilling1.LoadComboBoxData();
+            manageBilling1.displayData();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -138,6 +150,9 @@ namespace Gym
             dashboard1.Visible = false;
             manageBilling1.Visible = false;
             homePage1.Visible = false;
+
+
+            manageMemberships1.displayData();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -186,7 +201,7 @@ namespace Gym
 
         private void btnMemberships_Leave(object sender, EventArgs e)
         {
-            btnMembers.BackColor = Color.FromArgb(24, 30, 54);
+            btnMemberships.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnLogout_Leave(object sender, EventArgs e)

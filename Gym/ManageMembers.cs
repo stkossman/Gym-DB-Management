@@ -134,6 +134,14 @@ namespace Gym
                 DateBirth = MemberDateBirth.Value,
                 DateJoin = MemberDateJoin.Value
             };
+
+            _context.Clients.Add(newClient);
+            _context.SaveChanges();
+
+            clearFields();
+            displayData();
+
+            MessageBox.Show("Client added successfully", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void ClientBtnDelete_Click(object sender, EventArgs e)
         {

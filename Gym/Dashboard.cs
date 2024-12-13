@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,8 +40,9 @@ namespace Gym
         public void DisplayProfitTotal()
         {
             decimal totalProfitValue = _context.Payments.Sum(c => (decimal?)c.Amount) ?? 0;
-            lblEarnings.Text = totalProfitValue.ToString("C");
+            lblEarnings.Text = totalProfitValue.ToString("C", new CultureInfo("en-US"));
         }
+
 
         public void DisplayMemberships()
         { 

@@ -103,6 +103,16 @@ namespace Gym.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap client64 {
+            get {
+                object obj = ResourceManager.GetObject("client64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap closedEye {
             get {
                 object obj = ResourceManager.GetObject("closedEye", resourceCulture);
@@ -126,6 +136,16 @@ namespace Gym.Properties {
         internal static System.Drawing.Bitmap coach32 {
             get {
                 object obj = ResourceManager.GetObject("coach32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coach64 {
+            get {
+                object obj = ResourceManager.GetObject("coach64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

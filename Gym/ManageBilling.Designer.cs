@@ -32,11 +32,11 @@
             BillingBtnCancel = new Button();
             BillingBtnConfirm = new Button();
             label3 = new Label();
-            BillingTxtAmount = new TextBox();
-            BillingCmbMember = new ComboBox();
             BillingDatePeriod = new DateTimePicker();
-            BillingDate = new DateTimePicker();
             BillingGridList = new DataGridView();
+            BillingCmbMember = new ComboBox();
+            BillingLblClient = new Label();
+            BillingLblPeriod = new Label();
             ((System.ComponentModel.ISupportInitialize)BillingGridList).BeginInit();
             SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             BillingBtnCancel.Name = "BillingBtnCancel";
             BillingBtnCancel.Size = new Size(75, 30);
             BillingBtnCancel.TabIndex = 30;
-            BillingBtnCancel.Text = "Clear";
+            BillingBtnCancel.Text = "Delete";
             BillingBtnCancel.UseVisualStyleBackColor = false;
             BillingBtnCancel.Click += BillingBtnCancel_Click;
             // 
@@ -75,7 +75,7 @@
             BillingBtnConfirm.Name = "BillingBtnConfirm";
             BillingBtnConfirm.Size = new Size(75, 30);
             BillingBtnConfirm.TabIndex = 31;
-            BillingBtnConfirm.Text = "Confirm";
+            BillingBtnConfirm.Text = "Add";
             BillingBtnConfirm.UseVisualStyleBackColor = false;
             BillingBtnConfirm.Click += BillingBtnConfirm_Click;
             // 
@@ -90,36 +90,12 @@
             label3.TabIndex = 24;
             label3.Text = "Billing";
             // 
-            // BillingTxtAmount
-            // 
-            BillingTxtAmount.Font = new Font("NAMU 1960", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            BillingTxtAmount.Location = new Point(14, 206);
-            BillingTxtAmount.Name = "BillingTxtAmount";
-            BillingTxtAmount.PlaceholderText = "Amount";
-            BillingTxtAmount.Size = new Size(159, 22);
-            BillingTxtAmount.TabIndex = 28;
-            // 
-            // BillingCmbMember
-            // 
-            BillingCmbMember.FormattingEnabled = true;
-            BillingCmbMember.Location = new Point(14, 98);
-            BillingCmbMember.Name = "BillingCmbMember";
-            BillingCmbMember.Size = new Size(121, 23);
-            BillingCmbMember.TabIndex = 34;
-            // 
             // BillingDatePeriod
             // 
-            BillingDatePeriod.Location = new Point(14, 138);
+            BillingDatePeriod.Location = new Point(14, 178);
             BillingDatePeriod.Name = "BillingDatePeriod";
             BillingDatePeriod.Size = new Size(200, 23);
             BillingDatePeriod.TabIndex = 35;
-            // 
-            // BillingDate
-            // 
-            BillingDate.Location = new Point(14, 167);
-            BillingDate.Name = "BillingDate";
-            BillingDate.Size = new Size(200, 23);
-            BillingDate.TabIndex = 36;
             // 
             // BillingGridList
             // 
@@ -130,19 +106,49 @@
             BillingGridList.TabIndex = 37;
             BillingGridList.CellClick += BillingGridList_CellClick;
             // 
+            // BillingCmbMember
+            // 
+            BillingCmbMember.FormattingEnabled = true;
+            BillingCmbMember.Location = new Point(14, 108);
+            BillingCmbMember.Name = "BillingCmbMember";
+            BillingCmbMember.Size = new Size(121, 23);
+            BillingCmbMember.TabIndex = 34;
+            // 
+            // BillingLblClient
+            // 
+            BillingLblClient.AutoSize = true;
+            BillingLblClient.Font = new Font("Montserrat", 15F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BillingLblClient.ForeColor = Color.FromArgb(0, 126, 249);
+            BillingLblClient.Location = new Point(14, 78);
+            BillingLblClient.Name = "BillingLblClient";
+            BillingLblClient.Size = new Size(75, 27);
+            BillingLblClient.TabIndex = 32;
+            BillingLblClient.Text = "Client";
+            // 
+            // BillingLblPeriod
+            // 
+            BillingLblPeriod.AutoSize = true;
+            BillingLblPeriod.Font = new Font("Montserrat", 15F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            BillingLblPeriod.ForeColor = Color.FromArgb(0, 126, 249);
+            BillingLblPeriod.Location = new Point(14, 148);
+            BillingLblPeriod.Name = "BillingLblPeriod";
+            BillingLblPeriod.Size = new Size(82, 27);
+            BillingLblPeriod.TabIndex = 32;
+            BillingLblPeriod.Text = "Period";
+            // 
             // ManageBilling
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(BillingGridList);
-            Controls.Add(BillingDate);
             Controls.Add(BillingDatePeriod);
             Controls.Add(BillingCmbMember);
+            Controls.Add(BillingLblPeriod);
+            Controls.Add(BillingLblClient);
             Controls.Add(MembershipLblList);
             Controls.Add(BillingBtnCancel);
             Controls.Add(BillingBtnConfirm);
             Controls.Add(label3);
-            Controls.Add(BillingTxtAmount);
             Name = "ManageBilling";
             Size = new Size(729, 358);
             ((System.ComponentModel.ISupportInitialize)BillingGridList).EndInit();
@@ -155,10 +161,10 @@
         private Button BillingBtnCancel;
         private Button BillingBtnConfirm;
         private Label label3;
-        private TextBox BillingTxtAmount;
-        private ComboBox BillingCmbMember;
         private DateTimePicker BillingDatePeriod;
-        private DateTimePicker BillingDate;
         private DataGridView BillingGridList;
+        private ComboBox BillingCmbMember;
+        private Label BillingLblClient;
+        private Label BillingLblPeriod;
     }
 }

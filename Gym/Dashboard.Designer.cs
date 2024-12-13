@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnlDashboard = new Panel();
+            pictureBox1 = new PictureBox();
             lblDashboard = new Label();
             pnlCoaches = new Panel();
             pictureBox5 = new PictureBox();
@@ -54,8 +55,8 @@
             lblMemberships = new Label();
             label7 = new Label();
             label8 = new Label();
-            pictureBox1 = new PictureBox();
             pnlDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlCoaches.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             pnlEarnings.SuspendLayout();
@@ -66,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             pnlMemberships.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pnlDashboard
@@ -82,6 +82,16 @@
             pnlDashboard.Name = "pnlDashboard";
             pnlDashboard.Size = new Size(743, 535);
             pnlDashboard.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LEVRONEEEEEEEEEEEE;
+            pictureBox1.Location = new Point(572, 16);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(157, 491);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 19;
+            pictureBox1.TabStop = false;
             // 
             // lblDashboard
             // 
@@ -108,7 +118,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.membership64;
+            pictureBox5.Image = Properties.Resources.coach64;
             pictureBox5.Location = new Point(158, 14);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(100, 102);
@@ -218,7 +228,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.membership64;
+            pictureBox4.Image = Properties.Resources.client64;
             pictureBox4.Location = new Point(158, 14);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(100, 102);
@@ -346,11 +356,11 @@
             label7.AutoSize = true;
             label7.Font = new Font("Montserrat", 9.749999F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label7.ForeColor = Color.FromArgb(159, 151, 176);
-            label7.Location = new Point(16, 98);
+            label7.Location = new Point(16, 94);
             label7.Name = "label7";
-            label7.Size = new Size(143, 18);
+            label7.Size = new Size(114, 36);
             label7.TabIndex = 0;
-            label7.Text = "Details of last 28 days";
+            label7.Text = "Total amount \r\nof memberships";
             // 
             // label8
             // 
@@ -363,16 +373,6 @@
             label8.TabIndex = 0;
             label8.Text = "Memberships";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.LEVRONEEEEEEEEEEEE;
-            pictureBox1.Location = new Point(572, 16);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(157, 491);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 19;
-            pictureBox1.TabStop = false;
-            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -382,6 +382,7 @@
             Size = new Size(745, 539);
             pnlDashboard.ResumeLayout(false);
             pnlDashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnlCoaches.ResumeLayout(false);
             pnlCoaches.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -397,7 +398,6 @@
             pnlMemberships.ResumeLayout(false);
             pnlMemberships.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 

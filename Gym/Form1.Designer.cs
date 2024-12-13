@@ -51,9 +51,9 @@
             manageBilling1 = new ManageBilling();
             homePage1 = new HomePage();
             pnlTitleBar = new Panel();
-            label1 = new Label();
-            label2 = new Label();
             pictureBox2 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -346,17 +346,15 @@
             pnlTitleBar.TabIndex = 19;
             pnlTitleBar.MouseDown += pnlTitleBar_MouseDown;
             // 
-            // label1
+            // pictureBox2
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Montserrat", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.ForeColor = Color.FromArgb(0, 126, 249);
-            label1.Location = new Point(288, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(348, 33);
-            label1.TabIndex = 1;
-            label1.Text = "Gym Management System";
-            label1.TextAlign = ContentAlignment.TopRight;
+            pictureBox2.Image = Properties.Resources.dumbell128;
+            pictureBox2.Location = new Point(642, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(95, 94);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -370,15 +368,17 @@
             label2.Text = "made by Kossman";
             label2.TextAlign = ContentAlignment.TopRight;
             // 
-            // pictureBox2
+            // label1
             // 
-            pictureBox2.Image = Properties.Resources.dumbell128;
-            pictureBox2.Location = new Point(642, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(95, 94);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
+            label1.AutoSize = true;
+            label1.Font = new Font("Montserrat", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.ForeColor = Color.FromArgb(0, 126, 249);
+            label1.Location = new Point(288, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(348, 33);
+            label1.TabIndex = 1;
+            label1.Text = "Gym Management System";
+            label1.TextAlign = ContentAlignment.TopRight;
             // 
             // Form1
             // 
