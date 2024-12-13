@@ -32,7 +32,7 @@ Gym DB Management is a Windows Forms application designed to streamline the mana
    git clone https://github.com/stkossman/Gym-DB-Management.git
    ```
 
-2. Open the solution file (`Gym-DB-Management.sln`) in Visual Studio.
+2. Open the solution file (`Gym.sln`) in Visual Studio.
 
 3. Restore NuGet packages:
    ```bash
