@@ -118,82 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="person" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apps32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="apps64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="coach32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coach32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jerky" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jerky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LEVRONEEEEEEEEEEEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LEVRONEEEEEEEEEEEE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="receptionist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\receptionist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="finance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1coach32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1coach32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="earnings64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\earnings64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="membership64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\membership64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="openEye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\openEye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="survey64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\survey64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="membership32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\membership32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="member" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\member.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="earnings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\earnings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="closedEye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closedEye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dumbell128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dumbell128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="closedEye2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\closedEye2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="openEye2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openEye2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="member" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\member.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="receptionist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\receptionist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="earnings64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\earnings64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LEVRONEEEEEEEEEEEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LEVRONEEEEEEEEEEEE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="survey64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\survey64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="openEye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\openEye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dumbell128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dumbell128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="membership32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\membership32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jerky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jerky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="earnings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\earnings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="membership64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\membership64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apps32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apps32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closedEye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closedEye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apps64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apps64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1coach32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1coach32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kossmansGym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kossmansGym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -193,9 +193,29 @@ namespace Gym.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap home32 {
+            get {
+                object obj = ResourceManager.GetObject("home32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jerky {
             get {
                 object obj = ResourceManager.GetObject("jerky", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kossmansGym {
+            get {
+                object obj = ResourceManager.GetObject("kossmansGym", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

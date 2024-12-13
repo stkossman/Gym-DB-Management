@@ -23,12 +23,10 @@ namespace Gym
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            pnlNav.Height = btnDashboard.Height;
-            pnlNav.Top = btnDashboard.Top;
-            pnlNav.Left = btnDashboard.Left;
-            btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
-
-            label2.Text = DateTime.Today.ToString("d");
+            pnlNav.Height = btnHome.Height;
+            pnlNav.Top = btnHome.Top;
+            pnlNav.Left = btnHome.Left;
+            btnHome.BackColor = Color.FromArgb(46, 51, 73);
 
             dashboard1.SetContext(_context);
             manageMemberships1.SetContext(_context);
@@ -47,7 +45,6 @@ namespace Gym
         {
             pnlNav.Height = btnDashboard.Height;
             pnlNav.Top = btnDashboard.Top;
-            pnlNav.Left = btnDashboard.Left;
             btnDashboard.BackColor = Color.FromArgb(46, 51, 73);
             dashboard1.Visible = true;
             manageCoach1.Visible = false;
@@ -55,7 +52,7 @@ namespace Gym
             manageMemberships1.Visible = false;
             manageReceptionists1.Visible = false;
             manageBilling1.Visible = false;
-
+            homePage1.Visible = false;
         }
 
         private void btnCoach_Click(object sender, EventArgs e)
@@ -69,6 +66,7 @@ namespace Gym
             manageMemberships1.Visible = false;
             manageReceptionists1.Visible = false;
             manageBilling1.Visible = false;
+            homePage1.Visible = false;
         }
 
         private void btnMembers_Click(object sender, EventArgs e)
@@ -82,6 +80,7 @@ namespace Gym
             manageMemberships1.Visible = false;
             manageReceptionists1.Visible = false;
             manageBilling1.Visible = false;
+            homePage1.Visible = false;
         }
 
         private void btnReceptionists_Click(object sender, EventArgs e)
@@ -95,6 +94,7 @@ namespace Gym
             manageMembers1.Visible = false;
             manageMemberships1.Visible = false;
             manageBilling1.Visible = false;
+            homePage1.Visible = false;
         }
 
         private void btnBilling_Click(object sender, EventArgs e)
@@ -108,6 +108,7 @@ namespace Gym
             manageCoach1.Visible = false;
             manageMembers1.Visible = false;
             manageMemberships1.Visible = false;
+            homePage1.Visible = false;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -136,6 +137,26 @@ namespace Gym
             manageCoach1.Visible = false;
             dashboard1.Visible = false;
             manageBilling1.Visible = false;
+            homePage1.Visible = false;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = btnHome.Height;
+            pnlNav.Top = btnHome.Top;
+            pnlNav.Left = btnHome.Left;
+            btnHome.BackColor = Color.FromArgb(46, 51, 73);
+            homePage1.Visible = true;
+            manageMemberships1.Visible = false;
+            manageMembers1.Visible = false;
+            manageCoach1.Visible = false;
+            dashboard1.Visible = false;
+            manageBilling1.Visible = false;
+        }
+
+        private void btnHome_Leave(object sender, EventArgs e)
+        {
+            btnHome.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnDashboard_Leave(object sender, EventArgs e)
@@ -163,6 +184,11 @@ namespace Gym
             btnBilling.BackColor = Color.FromArgb(24, 30, 54);
         }
 
+        private void btnMemberships_Leave(object sender, EventArgs e)
+        {
+            btnMembers.BackColor = Color.FromArgb(24, 30, 54);
+        }
+
         private void btnLogout_Leave(object sender, EventArgs e)
         {
             btnLogout.BackColor = Color.FromArgb(24, 30, 54);
@@ -173,9 +199,16 @@ namespace Gym
             Application.Exit();
         }
 
-        private void btnMemberships_Leave(object sender, EventArgs e)
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+        private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
-            btnMembers.BackColor = Color.FromArgb(24, 30, 54);
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
