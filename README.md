@@ -63,25 +63,6 @@ Gym DB Management is a Windows Forms application designed to streamline the mana
 3. **Run Surveys**: Use the survey feature to recommend the best membership options to clients.
 4. **Monitor Payments**: Track and process payment transactions.
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature description"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
