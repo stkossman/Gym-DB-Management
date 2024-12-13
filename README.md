@@ -1,11 +1,11 @@
 # Gym DB Management
 
-Gym DB Management is a Windows Forms application designed to streamline the management of gym operations. This project uses C#, Entity Framework, and SQL Server to handle tasks such as managing memberships, trainers, clients, subscriptions, and payment systems. The application also includes a survey system for recommending personalized memberships and a bonus program to improve customer retention.
+Gym DB Management is a Windows Forms application designed to streamline the management of gym operations. This project uses C#, Entity Framework, and SQL Server to handle tasks such as managing memberships, trainers, clients, subscriptions, and payment systems. The application also includes a survey system for recommending personalized memberships.
 
 ## Features
 
 - **Administrative Panel**: Manage clients, trainers, administrators, and their associated data.
-- **Memberships and Subscriptions**: Create and manage gym memberships, subscriptions, and bonus programs.
+- **Memberships and Subscriptions**: Create and manage gym memberships, subscriptions.
 - **Survey System**: Recommend memberships based on survey results.
 - **Payment Management**: Track and process payments efficiently.
 - **Entity Framework Integration**: Simplified database management with EF Core.
