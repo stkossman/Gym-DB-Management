@@ -58,7 +58,7 @@ Gym DB Management is a Windows Forms application designed to streamline the mana
 
 ## Usage
 
-1. **Login**: Use the admin credentials to log in to the application.
+1. **Login**: Use the admin credentials to log in to the application. You will need to write a SQL query to create an user.
 2. **Manage Data**: Navigate to the administrative panel to manage trainers, clients, and memberships.
 3. **Run Surveys**: Use the survey feature to recommend the best membership options to clients.
 4. **Monitor Payments**: Track and process payment transactions.
