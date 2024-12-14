@@ -15,7 +15,7 @@ namespace Gym
             // see https://aka.ms/applicationconfiguration.
             using (var context = new GymDbContext(new DbContextOptionsBuilder<GymDbContext>()
     .UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=GymDB;Trusted_Connection=True;").Options))
-                Application.Run(new Form1(context));
+                Application.Run(new LoginForm(context));
         }
     }
 }
